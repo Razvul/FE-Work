@@ -10,7 +10,7 @@
     <form>
         <div>
             <label for="nume">Your name</label>
-            <input type="text" name="nume" id="nume" placeholder="Nume" required min="3" max="10"/>
+            <input type="text" name="nume" id="nume" placeholder="Nume" minlength="3" maxlength="10" required>
         </div>
 
         <div>
@@ -23,7 +23,7 @@
             <input type="radio" name="supreme" id="supreme" value="supreme">
             <label for="supreme">Supreme</label>
 
-            <input type="radio" name="vegetarian" id="vegetarian" value="vegetarian">
+            <input type="radio" name="vegetarian" id="vegetarian" value="vegetarian" checked>
             <label for="vegetarian">Vegetarian</label>
 
             <input type="radio" name="hawaian" id="hawaian" value="hawaian">
@@ -34,7 +34,7 @@
             <label for="sos">Sauce:</label>
             <select name="sos" id="sos">
                 <option value="tomato">Tomato</option>
-                <option value="garlic">Garlic</option>
+                <option value="garlic" selected>Garlic</option>
                 <option value="tzatziki">Tzatziki</option>
             </select>
         </div>
@@ -51,12 +51,23 @@
             <label for="olives">Olives</label>
         </div>
 
+        <div>
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity" id="quantity" min="1" max="7" value="2">
+        </div>
+
+        <div>
+            <label for="data">Data livrare:</label>
+            <input type="date" name="data" id="data">
+        </div>
+
         <div class="area">
             <label for="instructiuni">Delivery instructions:</label>
-            <textarea id="instructiuni" name="instructiuni"></textarea>
+            <textarea id="instructiuni" name="instructiuni" placeholder="Scrieti detalii" required></textarea>
         </div>
 
         <button type="submit">Send Order</button>
+        <button type="reset">Reset</button>
     </form>
 </body>
 </html>
