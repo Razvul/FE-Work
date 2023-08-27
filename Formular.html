@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formular</title>
+    <link rel="stylesheet" href="Formular.css">
 </head>
 <body>
-    
+    <form>
+        <div>
+            <label for="nume">Your name</label>
+            <input type="text" name="nume" id="nume" placeholder="Nume" required min="3" max="10"/>
+        </div>
+        <div>
+            <label for="email">Your email</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+        </div>
+        <div>
+            Topping:
+            <input type="radio" name="supreme" id="supreme" value="supreme">
+            <label for="supreme">Supreme</label>
+
+            <input type="radio" name="vegetarian" id="vegetarian" value="vegetarian">
+            <label for="vegetarian">Vegetarian</label>
+
+            <input type="radio" name="hawaian" id="hawaian" value="hawaian">
+            <label for="hawaian">Hawaian</label>
+        </div>
+    </form>
 </body>
 </html>
