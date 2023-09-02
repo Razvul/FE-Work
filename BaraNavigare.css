@@ -1,6 +1,14 @@
 div{
     background-color: yellow;
     display: inline-block;
+    line-height: 95px;
+    height: 95px;
+    vertical-align: top;
+    width: 400px;
+    justify-content: center;
+}
+div > *{
+    vertical-align: middle;
 }
 img{
     width: 50px;
@@ -8,5 +16,4 @@ img{
 }
 a{
     text-align: center;
-    width: 40px;
 }
