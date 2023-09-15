@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+h1, p{
+    text-align: center;
+}
+.cutie{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 180px;
+    align-items: center;
+    border: 1px solid black;
+    text-align: center;
+}
+.ceas-imagine{
+    width: 150px;
+    height: 100px;
+    background-color: lightgreen;
+}
+button{
+    background-color: white;
+    padding: 5px 30px;
+    margin-bottom: 20px;
+}
