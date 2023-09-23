@@ -1,12 +1,17 @@
+*{
+    box-sizing: border-box;
+}
 .container{
     display: flex;
-    width: 500px;
-    height: 110px;
+    width: 900px;
+    height: 400px;
     margin: auto;
 }
 .container1{
     display: flex;
     flex-direction: column;
+    width: 50%;
+    height: auto;
 }
 .tall{
     margin-left: 10px;
@@ -14,11 +19,14 @@
     padding: 10px;
     padding-right: 20px;
     padding-bottom: 40px;
-    height: min-content;
+    height: 100%;
+    width: 50%;
     flex-wrap: wrap;
 }
 .container2{
     display: flex;
+    height: 50%;
+    width: auto;
 }
 .wide{
     background-color: red;
@@ -27,12 +35,14 @@
     padding-right: 40px;
     padding-bottom: 40px;
     flex-wrap: wrap;
-    height: min-content;
-    width: 230px;
+    height: 50%;
+    width: auto;
 }
 .container3{
     display: flex;
     flex-direction: column;
+    width: 50%;
+    height: auto;   
 }
 .middle{
     background-color: blue;
@@ -41,6 +51,8 @@
     padding-bottom: 40px;
     flex-wrap: wrap;
     margin-left: 10px;
+    width: 50%;
+    height: auto;  
 }
 .sus{
     background-color: lightblue;
@@ -49,6 +61,8 @@
     padding-right: 20px;
     flex-wrap: wrap;
     padding-bottom: 40px;
+    height: 50%;
+    width: auto;
 }
 .jos{
     background-color: yellow;
@@ -56,4 +70,6 @@
     padding-right: 20px;
     flex-wrap: wrap;
     padding-bottom: 40px;
+    height: 50%;
+    width: auto;
 }
