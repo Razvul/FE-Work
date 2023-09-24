@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: green;
+}
+.calculator{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    border: 2px solid gray;
+    width: 400px;
+}
+.bara-sus{
+    display: flex;
+    background-color: lightgray;
+    width: 100%;
+}
+.bara-sus div{
+    padding: 5px 10px; 
+}
+.bara-sus div:hover{
+    background-color: wheat;
+    cursor: pointer;
+}
+.bara-sus div:first-child{
+    flex-grow: 5;
+}
+
+.bara1{
+    background-color: lightgray;
+    padding: 5px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.burger{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+span{
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    margin: 1px;
+}
+.denumire{
+    margin: 0;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.ecran{
+    background-color: lightgray;
+    width: 100%;
+    padding: 0;
+    padding-top: 20px;
+    padding-right: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    font-size: 40px;
+}
+
+.butoane-sus{
+    display: flex;
+    background-color: lightgray;
+    justify-content: space-around;
+    padding: 5px;
+}
+.deschis{
+    color: rgb(129 125 125);
+}
+.inchis{
+    font-weight: bold;
+}
+
+.grid-butoane-multe{
+    display: grid;
+    background-color: lightgray;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 10px 5px;
+    padding: 5px;
+}
+.grid-butoane-multe div{
+    padding: 20px;
+    font-size: 20px;
+    background-color: darkgray;
+}
+.numar, .plus-minus, .punct, .egal{
+    font-weight: bold;
+}
+.grid-butoane-multe .numar, .grid-butoane-multe .plus-minus, .grid-butoane-multe .punct{
+    background-color: white;
+}
+.grid-butoane-multe .egal{
+    background-color: #61c2e2;
+}
