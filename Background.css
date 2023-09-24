@@ -1,0 +1,8 @@
+div{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+img{
+    border: 6px dotted red;
+}
