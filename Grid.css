@@ -6,12 +6,17 @@
 body{
     background-color: green;
 }
+.calculatoare{
+    display: flex;
+    justify-content: space-around;
+}
 .calculator{
     display: flex;
     margin: auto;
     flex-direction: column;
     border: 2px solid gray;
     width: 400px;
+    height: 610px;
 }
 .bara-sus{
     display: flex;
@@ -23,6 +28,7 @@ body{
 }
 .bara-sus div:hover{
     background-color: wheat;
+    transition-delay: 0.1s;
     cursor: pointer;
 }
 .bara-sus div:first-child{
@@ -42,6 +48,9 @@ body{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+}
+.burger:hover{
+    cursor: pointer;
 }
 span{
     width: 10px;
@@ -74,6 +83,14 @@ span{
     justify-content: space-around;
     padding: 5px;
 }
+.butoane-sus .deschis:hover, .butoane-sus-grid .deschis:hover{
+    cursor: pointer;
+    color: blue;
+}
+.butoane-sus .inchis:hover, .butoane-sus-grid .inchis:hover, .butoane-sus-grid:first-child:hover{
+    color: red;
+    cursor: pointer;
+}
 .deschis{
     color: rgb(129 125 125);
 }
@@ -97,9 +114,56 @@ span{
 .numar, .plus-minus, .punct, .egal{
     font-weight: bold;
 }
-.grid-butoane-multe .numar, .grid-butoane-multe .plus-minus, .grid-butoane-multe .punct{
+.grid-butoane-multe > *:hover, .grid-butoane-multe2 > *:hover {
+    background-color: lightgray;
+    color: black;
+}
+.grid-butoane-multe .numar, .grid-butoane-multe .plus-minus, .grid-butoane-multe .punct,
+.grid-butoane-multe2 .numar, .grid-butoane-multe2 .plus-minus, .grid-butoane-multe2 .punct{
     background-color: white;
 }
-.grid-butoane-multe .egal{
+.numar:hover, .punct:hover, .plus-minus:hover{
+    color: white;
+    transition-delay: 0.1s;
+    background-color: black;
+}
+.grid-butoane-multe .egal, .grid-butoane-multe2 .egal{
     background-color: #61c2e2;
+}
+.egal:hover{
+    color: white;
+    background-color: blue;
+    transition-delay: 0.1s;
+}
+
+
+.butoane-sus-grid{
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px 5px;
+}
+.span5{
+    grid-column: 2 / 7;
+}
+.grid-butoane-multe2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: lightgray;
+    text-align: center;
+    gap: 5px 5px;
+    padding: 5px;
+}
+.grid-butoane-multe2 div{
+    padding: 15px;
+    font-size: 20px;
+    background-color: darkgray;
+}
+.butoane-sus-grid > p:hover{
+    cursor: pointer;
+    color: red;
+}
+p.span5:hover{
+    cursor: pointer;
+    color: blue;
 }
