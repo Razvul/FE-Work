@@ -1,4 +1,28 @@
-div{
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./poze/Hoarda.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: calc(50%);
+    background-position-y: -40px;
+    width: 500px;
+    height: 150px;
+    margin: auto;
+}
+button{
+    border-radius: 3px;
+}
+.poza{
+    padding-top: 30px;
     display: flex;
     margin: 0 auto;
     justify-content: center;
