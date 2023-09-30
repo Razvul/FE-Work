@@ -16,32 +16,32 @@ body{
     margin: 10px;
 }
 .punct1{
-    animation: punct1 3s ease-in-out 0s infinite forwards;
+    animation: punct1 1s linear 0s infinite forwards;
 }
 @keyframes punct1{
     0% {transform: translateY(0);}
-    25% {transform: translateY(-40px);}
+    25% {transform: translateY(-20px);}
     50% {transform: translateY(0);}
     75% {transform: translateY(0);}
     100% {transform: translateY(0);}
 }
 .punct2{
-    animation: punct2 3s ease-in-out 0s infinite forwards;
+    animation: punct2 1s linear 0s infinite forwards;
 }
 @keyframes punct2{
     0% {transform: translateY(0);}
     25% {transform: translateY(0);}
-    50% {transform: translateY(-40px);}
+    50% {transform: translateY(-20px);}
     75% {transform: translateY(0);}
     100% {transform: translateY(0);}
 }
 .punct3{
-    animation: punct3 3s ease-in-out 0s infinite forwards;
+    animation: punct3 1s linear 0s infinite forwards;
 }
 @keyframes punct3{
     0% {transform: translateY(0);}
     25% {transform: translateY(0);}
     50% {transform: translateY(0);}
-    75% {transform: translateY(-40px);}
+    75% {transform: translateY(-20px);}
     100% {transform: translateY(0);}
 }
