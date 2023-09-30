@@ -137,6 +137,12 @@ span{
 }
 
 
+
+
+
+
+
+
 .butoane-sus-grid{
     background-color: lightgray;
     display: grid;
@@ -166,4 +172,78 @@ span{
 p.span5:hover{
     cursor: pointer;
     color: blue;
+}
+
+
+
+
+
+.metro{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 620px;
+    width: 1100px;
+    margin: 20px 100px;
+}
+.meniuMic{
+    flex: 0.1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+.burger2{
+    display: flex;
+    flex-direction: column;
+}
+.burger2 span{
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    margin: 1px;
+}
+.setari > div{
+    padding: 10px 5px;
+}
+
+.listaAplicatii{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.listaAplicatii > h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.pereche{
+    display: flex;
+}
+.icoana{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin: 0 10px 10px 0;
+}
+
+
+
+
+.listaFavorite{
+    flex: 1.5;
+}
+.grup{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+.element{
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
 }
