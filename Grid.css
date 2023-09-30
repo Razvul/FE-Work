@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: green;
+}
+.calculatoare{
+    display: flex;
+    justify-content: space-around;
+}
+.calculator{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    border: 2px solid gray;
+    width: 400px;
+    height: 610px;
+}
+.bara-sus{
+    display: flex;
+    background-color: lightgray;
+    width: 100%;
+}
+.bara-sus div{
+    padding: 5px 10px; 
+}
+.bara-sus div:hover{
+    background-color: wheat;
+    transition-delay: 0.1s;
+    cursor: pointer;
+}
+.bara-sus div:first-child{
+    flex-grow: 5;
+}
+
+.bara1{
+    background-color: lightgray;
+    padding: 5px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.burger{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.burger:hover{
+    cursor: pointer;
+}
+span{
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    margin: 1px;
+}
+.denumire{
+    margin: 0;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.ecran{
+    background-color: lightgray;
+    width: 100%;
+    padding: 0;
+    padding-top: 20px;
+    padding-right: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    font-size: 40px;
+}
+
+.butoane-sus{
+    display: flex;
+    background-color: lightgray;
+    justify-content: space-around;
+    padding: 5px;
+}
+.butoane-sus .deschis:hover, .butoane-sus-grid .deschis:hover{
+    cursor: pointer;
+    color: blue;
+}
+.butoane-sus .inchis:hover, .butoane-sus-grid .inchis:hover, .butoane-sus-grid:first-child:hover{
+    color: red;
+    cursor: pointer;
+}
+.deschis{
+    color: rgb(129 125 125);
+}
+.inchis{
+    font-weight: bold;
+}
+
+.grid-butoane-multe{
+    display: grid;
+    background-color: lightgray;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 10px 5px;
+    padding: 5px;
+}
+.grid-butoane-multe div{
+    padding: 20px;
+    font-size: 20px;
+    background-color: darkgray;
+}
+.numar, .plus-minus, .punct, .egal{
+    font-weight: bold;
+}
+.grid-butoane-multe > *:hover, .grid-butoane-multe2 > *:hover {
+    background-color: lightgray;
+    color: black;
+}
+.grid-butoane-multe .numar, .grid-butoane-multe .plus-minus, .grid-butoane-multe .punct,
+.grid-butoane-multe2 .numar, .grid-butoane-multe2 .plus-minus, .grid-butoane-multe2 .punct{
+    background-color: white;
+}
+.numar:hover, .punct:hover, .plus-minus:hover{
+    color: white;
+    transition-delay: 0.1s;
+    background-color: black;
+}
+.grid-butoane-multe .egal, .grid-butoane-multe2 .egal{
+    background-color: #61c2e2;
+}
+.egal:hover{
+    color: white;
+    background-color: blue;
+    transition-delay: 0.1s;
+}
+
+
+
+
+
+
+
+
+.butoane-sus-grid{
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px 5px;
+}
+.span5{
+    grid-column: 2 / 7;
+}
+.grid-butoane-multe2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: lightgray;
+    text-align: center;
+    gap: 5px 5px;
+    padding: 5px;
+}
+.grid-butoane-multe2 div{
+    padding: 15px;
+    font-size: 20px;
+    background-color: darkgray;
+}
+.butoane-sus-grid > p:hover{
+    cursor: pointer;
+    color: red;
+}
+p.span5:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+
+
+
+
+.metro{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 620px;
+    width: 1100px;
+    margin: 20px 100px;
+}
+.meniuMic{
+    flex: 0.1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+.burger2{
+    display: flex;
+    flex-direction: column;
+}
+.burger2 span{
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    margin: 1px;
+}
+.setari > div{
+    padding: 10px 5px;
+}
+
+.listaAplicatii{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.listaAplicatii > h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.pereche{
+    display: flex;
+}
+.icoana{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin: 0 10px 10px 0;
+}
+
+
+
+
+.listaFavorite{
+    flex: 1.5;
+}
+.grup{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+.element{
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+}
