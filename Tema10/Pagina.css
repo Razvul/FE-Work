@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: blue;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+h1{
+    margin: 20px 0;
+    margin-top: 100px;
+}
+p{
+    margin: 10px;
+}
+h1, p{
+    color: white;
+}
+button{
+    border: 1px solid white;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    margin-top: 30px;
+}
+button:hover{
+    background-color: red;
+}
+.titlu{
+    animation: titlu 6s linear 0s infinite forwards;
+}
+@keyframes titlu{
+    0% {transform: translateY(-200px);}
+    40% {transform: translateY(0);}
+    45% {transform: translateY(0);}
+    50% {transform: translateY(0);}
+    80% {transform: translateY(0);}
+    90% {transform: translateY(0);}
+    100% {transform: translateY(0);}
+}
+.strofe{
+    animation: strofe 6s linear 0s infinite forwards;
+}
+@keyframes strofe{
+    0% {transform: translateX(-950px);}
+    40% {transform: translateX(0);}
+    45% {transform: translateX(0);}
+    50% {transform: translateX(0);}
+    80% {transform: translateX(0);}
+    90% {transform: translateX(0);}
+    100% {transform: translateX(0);}
+}
+.btn{
+    animation: btn 3s linear 3s infinite forwards;
+    opacity: 0;
+}
+@keyframes btn{
+    0% {opacity: 0;}
+    33% {opacity: 0.3;}
+    66% {opacity: 0.6;}
+    100% {opacity: 1;}
+}
