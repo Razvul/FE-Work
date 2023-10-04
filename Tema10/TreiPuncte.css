@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 10px);
+}
+.punct{
+    background-color: greenyellow;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.punct1{
+    animation: punct1 1s linear 0s infinite forwards;
+}
+@keyframes punct1{
+    0% {transform: translateY(0);}
+    25% {transform: translateY(-20px);}
+    50% {transform: translateY(0);}
+    75% {transform: translateY(0);}
+    100% {transform: translateY(0);}
+}
+.punct2{
+    animation: punct2 1s linear 0s infinite forwards;
+}
+@keyframes punct2{
+    0% {transform: translateY(0);}
+    25% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+    75% {transform: translateY(0);}
+    100% {transform: translateY(0);}
+}
+.punct3{
+    animation: punct3 1s linear 0s infinite forwards;
+}
+@keyframes punct3{
+    0% {transform: translateY(0);}
+    25% {transform: translateY(0);}
+    50% {transform: translateY(0);}
+    75% {transform: translateY(-20px);}
+    100% {transform: translateY(0);}
+}
