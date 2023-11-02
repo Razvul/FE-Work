@@ -1,0 +1,64 @@
+body{
+    background-color: gray;
+}
+div{
+    width: 300px;
+    height: 300px;
+}
+.galben{
+    position: relative;
+    background-color: yellow;
+}
+.albastru{
+    position: relative;
+    background-color: blue;
+    top: 50%;
+    left: 50%;
+}
+.verde{
+    position: absolute;
+    background-color: green;
+    top: 50%;
+    left: 50%;
+}
+
+
+.parent{
+    border: 5px dotted purple;
+    border-radius: 5px;
+    position: relative;
+    background-color: lightgray;
+    left: 630px;
+    width: 320px;
+    height: 160px;
+}
+.parent > h2{
+    position: absolute;
+    left: 120px;
+}
+.child{
+    width: 110px;
+    height: 110px;
+    border: 3px dotted purple;
+    border-radius: 7px;
+}
+.child1{
+    position: absolute;
+    top: 0;
+    background-color: aquamarine;
+    z-index: 0;
+}
+.child2{
+    background-color: rgb(205, 90, 205);
+    position: absolute;
+    top: 45px;
+    left: 90px;
+    z-index: 1;
+}
+.child3{
+    position: absolute;
+    background-color: rgb(117, 169, 13);
+    top: 30px;
+    left: 190px;
+    z-index: 0;
+}
