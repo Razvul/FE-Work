@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./poze/Hoarda.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: calc(50%);
+    background-position-y: -40px;
+    width: 500px;
+    height: 150px;
+    margin: 10px auto;
+    padding-bottom: 10px;
+}
+button{
+    border-radius: 3px;
+}
+.poza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    background-image: url("./poze/Hoarda.jpg");
+    border: 6px dotted red;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    background-position-y: -15px;
+    height: 300px;
+    width: 500px;
+}
