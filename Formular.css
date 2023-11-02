@@ -6,3 +6,18 @@
     flex-direction: column;
     width: 200px;
 }
+label{
+    color: green;
+}
+input[type="text"]{
+    border: 2px solid green;
+}
+input[type="email"]{
+    background-color: blue;
+}
+button{
+    background-color: green; /*doar un buton sa fie verde sau ambele butoane?*/
+}
+body{
+    background-color: salmon;
+}
